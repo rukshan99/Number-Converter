@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: DecimalConverter
+Bundle-SymbolicName: NumberConverter
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.mtit.osgi.decimalconverter.Activator
+Bundle-Vendor: MTIT
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: com.mtit.osgi.DecimalConverter
+Import-Package: org.osgi.framework;version="1.3.0",
+ org.osgi.util.tracker;version="1.5.2"
