@@ -4,6 +4,8 @@ import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
 import org.osgi.util.tracker.ServiceTracker;
+
+import com.mtit.osgi.binaryconverter.BinaryService;
 import com.mtit.osgi.decimalconverter.DecimalConverterService;
 
 
