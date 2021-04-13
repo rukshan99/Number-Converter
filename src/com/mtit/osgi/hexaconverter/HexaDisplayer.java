@@ -82,7 +82,7 @@ public class HexaDisplayer extends JDialog{
 		input_box = new JTextField();
 		input_box.setHorizontalAlignment(SwingConstants.CENTER);
 		input_box.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		input_box.setBounds(50, 160, 280, 140);
+		input_box.setBounds(50, 180, 280, 70);
 
 		input_box.setColumns(10);
 		jPannel.add(input_box);
@@ -92,7 +92,7 @@ public class HexaDisplayer extends JDialog{
 		output_box.setBackground(Color.white);
 		output_box.setFont(new Font("Times New Roman", Font.BOLD, 20));
 		output_box.setHorizontalAlignment(SwingConstants.CENTER);
-		output_box.setBounds(400, 160, 280, 140);
+		output_box.setBounds(400, 180,280, 70);		
 		output_box.setColumns(10);
 		jPannel.add(output_box);
 
@@ -146,7 +146,7 @@ public class HexaDisplayer extends JDialog{
 						output_box.setText(outputHex);
 						}
 						else {
-							JOptionPane.showMessageDialog(null, "Input Valid Numbers Only ", "Alert",
+							JOptionPane.showMessageDialog(null, "Input Valid Numbers Between 0 - 9", "Alert",
 									JOptionPane.OK_OPTION);
 							output_box.setText(" ");
 						}
@@ -159,7 +159,7 @@ public class HexaDisplayer extends JDialog{
 						}
 
 						else {
-							JOptionPane.showMessageDialog(null, "Input Valid Numbers Only ", "Alert",
+							JOptionPane.showMessageDialog(null, "Input Valid Numbers Between 0 - 7", "Alert",
 									JOptionPane.OK_OPTION);
 							output_box.setText(" ");
 						}
@@ -170,7 +170,7 @@ public class HexaDisplayer extends JDialog{
 							outputHex = hexaService.BinaryHexadecimal(Integer.toString(inputdec));
 							output_box.setText(outputHex);
 						} else {
-							JOptionPane.showMessageDialog(null, "Input Valid Numbers Only ", "Alert",
+							JOptionPane.showMessageDialog(null, "Input Should be 0 or 1", "Alert",
 									JOptionPane.OK_OPTION);
 							output_box.setText(" ");
 						}
