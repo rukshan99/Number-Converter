@@ -7,6 +7,7 @@ import org.osgi.util.tracker.ServiceTracker;
 
 import com.mtit.osgi.binaryconverter.BinaryService;
 import com.mtit.osgi.decimalconverter.DecimalConverterService;
+import com.mtit.osgi.hexaconverter.HexaService;
 
 
 public class ConverterActivator implements BundleActivator {
