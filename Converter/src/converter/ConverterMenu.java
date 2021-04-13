@@ -13,6 +13,10 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import com.mtit.osgi.binaryconverter.BinaryDisplayer;
+import com.mtit.osgi.converter.ConverterActivator;
+import com.mtit.osgi.converter.ConverterMenu;
+import com.mtit.osgi.converter.HexaDisplayer;
+import com.mtit.osgi.converter.OctalDisplayer;
 import com.mtit.osgi.decimalconverter.DecimalConverterDisplayer;
 
 public class ConverterMenu extends JFrame  {
@@ -21,16 +25,12 @@ public class ConverterMenu extends JFrame  {
 	private JPanel jpanel;
 	private JButton decimalBtn,binaryBtn,octalBtn,hexaBtn;
 	private JLabel title; 
-	private static boolean decimalBtnOnclick = true;
+	private static boolean decimalBtnOnclick = false;
 	private static boolean binaryBtnOnclick = false;
-	private static boolean lengthBtnOnclick = false;
-	private static boolean storageBtnOnclick = false;
-	private static boolean speedBtnOnclick = false;
-	private static boolean massBtnOnclick = false;
-	private static boolean timeBtnOnClick = false;
-	private static boolean currencyBtnOnClick = false;
+	private static boolean octalBtnOnclick = false;
+	private static boolean hexaBtnOnclick = false;
 
-
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -57,7 +57,7 @@ public class ConverterMenu extends JFrame  {
 		jpanel.setLayout(null);
 		jpanel.setVisible(true);
 
-		title = new JLabel("Converter");
+		title = new JLabel("Number Converter");
 		title.setFont(new Font("Times New Roman", Font.PLAIN, 28));
 		title.setBounds(180, 25, 175, 30);
 		jpanel.add(title);
@@ -102,19 +102,19 @@ public class ConverterMenu extends JFrame  {
 		octalBtn = new JButton("Octal Converter");
 		octalBtn.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		octalBtn.setFocusable(false);
-//		octalBtn.addActionListener(new ActionListener() {
-//
-//			public void actionPerformed(ActionEvent e) {
-//				octalBtnOnclick = ConverterActivator.octalChecker();
-//				if (octalBtnOnclick == true) {
-//					LengthDisplayer lengthDisplayer = new LengthDisplayer();
-//					lengthDisplayer.setVisible(true);
-//				} else {
-//					JOptionPane.showMessageDialog(null, "Length Service is not Started",
-//							"Error !", JOptionPane.OK_OPTION);
-//				}
-//			}
-//		});
+		octalBtn.addActionListener(new ActionListener() {
+
+			public void actionPerformed(ActionEvent e) {
+				octalBtnOnclick = ConverterActivator.OctalChecker();
+				if (octalBtnOnclick == true) {
+					OctalDisplayer octalDisplayer = new OctalDisplayer();
+					octalDisplayer.setVisible(true);
+				} else {
+					JOptionPane.showMessageDialog(null, "Octal Converter Service is not Started",
+							"Error !", JOptionPane.OK_OPTION);
+				}
+			}
+		});
 
 		octalBtn.setBounds(50, 170, 200, 60);
 		jpanel.add(octalBtn);
@@ -123,18 +123,18 @@ public class ConverterMenu extends JFrame  {
 		hexaBtn = new JButton("Hexa-Decimal Converter");
 		hexaBtn.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		hexaBtn.setFocusable(false);
-//		hexaBtn.addActionListener(new ActionListener() {
-//			public void actionPerformed(ActionEvent e) {
-//				hexaBtnOnclick = ConverterActivator.StorageChecker();
-//				if (hexaBtnOnclick == true) {
-//					hexaDisplayer StorageDisplayer = new StorageDisplayer();
-//					StorageDisplayer.setVisible(true);
-//				} else {
-//					JOptionPane.showMessageDialog(null, "Storage Service is not Started",
-//							"Error !", JOptionPane.OK_OPTION);
-//				}
-//			}
-//		});
+		hexaBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				hexaBtnOnclick = ConverterActivator.HexaChecker();
+				if (hexaBtnOnclick == true) {
+					HexaDisplayer hexaDisplayer = new HexaDisplayer();
+					hexaDisplayer.setVisible(true);
+				} else {
+					JOptionPane.showMessageDialog(null, "HexaDecimal Converter Service is not Started",
+							"Error !", JOptionPane.OK_OPTION);
+				}
+			}
+		});
 		hexaBtn.setBounds(280, 170, 200, 60);
 		jpanel.add(hexaBtn);
 		
