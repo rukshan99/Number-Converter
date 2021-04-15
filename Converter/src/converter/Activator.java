@@ -1,12 +1,14 @@
 package converter;
 
+import decimalconverter.DecimalConverterService;
+import hexaconverter.HexaService;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
 import org.osgi.util.tracker.ServiceTracker;
 
 
-public class ConverterActivator implements BundleActivator {
+public class Activator implements BundleActivator {
 
 	private static BundleContext context;
 	

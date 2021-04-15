@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: DecimalConverter
-Bundle-SymbolicName: DecimalConverter
+Bundle-Name: HexaConverter
+Bundle-SymbolicName: HexaConverter
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: decimalconverter.Activator
+Bundle-Activator: hexaconverter.HexaActivator
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Automatic-Module-Name: DecimalConverter
+Automatic-Module-Name: HexaConverter
 Import-Package: org.osgi.framework;version="1.3.0"
 Bundle-ActivationPolicy: lazy
-Export-Package: decimalconverter
+Export-Package: hexaconverter

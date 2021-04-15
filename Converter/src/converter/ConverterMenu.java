@@ -12,12 +12,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import com.mtit.osgi.binaryconverter.BinaryDisplayer;
-import com.mtit.osgi.converter.ConverterActivator;
-import com.mtit.osgi.converter.ConverterMenu;
-import com.mtit.osgi.converter.HexaDisplayer;
-import com.mtit.osgi.converter.OctalDisplayer;
-import com.mtit.osgi.decimalconverter.DecimalConverterDisplayer;
+import decimalconverter.DecimalConverterDisplayer;
+import hexaconverter.HexaDisplayer;
 
 public class ConverterMenu extends JFrame  {
 	
