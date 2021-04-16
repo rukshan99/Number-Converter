@@ -1,6 +1,6 @@
 # Number-Converter
 
-### Number Converter Service Using OSGi Framework
+### Number Converter Services Using OSGi Framework
 
 Includes:
 - Binary Converter
