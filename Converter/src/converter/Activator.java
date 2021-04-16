@@ -3,6 +3,7 @@ package converter;
 import binaryconverter.BinaryService;
 import decimalconverter.DecimalConverterService;
 import hexaconverter.HexaService;
+import octalconverter.OctalService;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;

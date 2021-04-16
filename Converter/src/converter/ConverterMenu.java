@@ -15,6 +15,7 @@ import javax.swing.border.EmptyBorder;
 import binaryconverter.BinaryDisplayer;
 import decimalconverter.DecimalConverterDisplayer;
 import hexaconverter.HexaDisplayer;
+import octalconverter.OctalDisplayer;
 
 public class ConverterMenu extends JFrame  {
 	
