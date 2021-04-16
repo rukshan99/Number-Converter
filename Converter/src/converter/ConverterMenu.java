@@ -12,6 +12,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import binaryconverter.BinaryDisplayer;
 import decimalconverter.DecimalConverterDisplayer;
 import hexaconverter.HexaDisplayer;
 
@@ -25,7 +26,6 @@ public class ConverterMenu extends JFrame  {
 	private static boolean binaryBtnOnclick = false;
 	private static boolean octalBtnOnclick = false;
 	private static boolean hexaBtnOnclick = false;
-
 	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -63,7 +63,7 @@ public class ConverterMenu extends JFrame  {
 		decimalBtn.setFocusable(false);
 		decimalBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				decimalBtnOnclick = ConverterActivator.DecimalChecker();
+				decimalBtnOnclick = Activator.DecimalChecker();
 				if (decimalBtnOnclick == true) {
 					DecimalConverterDisplayer decimalConverterDisplayer = new DecimalConverterDisplayer();
 					decimalConverterDisplayer.setVisible(true);
@@ -81,7 +81,7 @@ public class ConverterMenu extends JFrame  {
 		binaryBtn.setFocusable(false);
 		binaryBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				binaryBtnOnclick = ConverterActivator.BinaryChecker();
+				binaryBtnOnclick = Activator.BinaryChecker();
 				if (binaryBtnOnclick == true) {
 					BinaryDisplayer binaryDisplayer = new BinaryDisplayer();
 					binaryDisplayer.setVisible(true);
@@ -101,7 +101,7 @@ public class ConverterMenu extends JFrame  {
 		octalBtn.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
-				octalBtnOnclick = ConverterActivator.OctalChecker();
+				octalBtnOnclick = Activator.OctalChecker();
 				if (octalBtnOnclick == true) {
 					OctalDisplayer octalDisplayer = new OctalDisplayer();
 					octalDisplayer.setVisible(true);
@@ -121,7 +121,7 @@ public class ConverterMenu extends JFrame  {
 		hexaBtn.setFocusable(false);
 		hexaBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				hexaBtnOnclick = ConverterActivator.HexaChecker();
+				hexaBtnOnclick = Activator.HexaChecker();
 				if (hexaBtnOnclick == true) {
 					HexaDisplayer hexaDisplayer = new HexaDisplayer();
 					hexaDisplayer.setVisible(true);

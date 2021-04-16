@@ -1,5 +1,6 @@
 package converter;
 
+import binaryconverter.BinaryService;
 import decimalconverter.DecimalConverterService;
 import hexaconverter.HexaService;
 import org.osgi.framework.BundleActivator;
