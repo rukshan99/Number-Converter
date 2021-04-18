@@ -63,12 +63,14 @@ import javax.swing.border.EmptyBorder;
 			
 			title = new JLabel("Binary Converter");
 			title.setFont(new Font("Times New Roman", Font.PLAIN, 35));
+			title.setFont(new Font("Arial", Font.PLAIN, 35));
 			title.setBounds(260, 20, 460, 40);
 			jPannel.add(title);
 			
 			dropdown = new JComboBox();
 			dropdown.setFont(new Font("Tahoma", Font.PLAIN, 16));
-			dropdown.setBounds(280, 85, 200, 40);
+			dropdown.setBounds(270, 85, 200, 40);
+			dropdown.setBackground(Color.white);
 			jPannel.add(dropdown);
 			
 			dropdown.addItem(" Decimal To Binary");
@@ -78,43 +80,44 @@ import javax.swing.border.EmptyBorder;
 
 
 			input = new JLabel("Input");
-			input.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-			input.setBounds(160, 120, 60, 20);
+			input.setFont(new Font("Comic Sans MS", Font.PLAIN, 20));
+			input.setBounds(160, 80, 200, 20);
 			jPannel.add(input);
-			
+
 			output = new JLabel("Output");
-			output.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-			output.setBounds(510, 120, 60, 20);
+			output.setFont(new Font("Comic Sans MS", Font.PLAIN, 20));
+			output.setBounds(485, 80, 200, 20);
 			jPannel.add(output);
-			
+
 			input_box = new JTextField();
 			input_box.setHorizontalAlignment(SwingConstants.CENTER);
-			input_box.setFont(new Font("Tahoma", Font.BOLD, 20));
-			input_box.setBounds(50, 160, 280, 140);
+			input_box.setFont(new Font("Comic Sans MS", Font.BOLD, 20));
+			input_box.setBounds(50, 180, 280, 70);
+
 			input_box.setColumns(10);
 			jPannel.add(input_box);
-
+			
 			output_box = new JTextField();
 			output_box.setEditable(false);
-			output_box.setBackground(Color.WHITE);
-			output_box.setFont(new Font("Tahoma", Font.BOLD, 20));
+			output_box.setBackground(Color.white);
+			output_box.setFont(new Font("Comic Sans MS", Font.BOLD, 20));
 			output_box.setHorizontalAlignment(SwingConstants.CENTER);
+			output_box.setBounds(400, 180,280, 70);		
 			output_box.setColumns(10);
-			output_box.setBounds(400, 160,280, 140);
 			jPannel.add(output_box);
 
-			
-
 			btn_Convert = new JButton("Convert");
-			btn_Convert.setFont(new Font("Tahoma", Font.PLAIN, 14));
+			btn_Convert.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
 			btn_Convert.setBounds(140, 330, 100, 40);
 			btn_Convert.setFocusable(false);
+			btn_Convert.setBackground(Color.cyan);
 			jPannel.add(btn_Convert);
 
 			btn_Clear = new JButton("Clear");
-			btn_Clear.setFont(new Font("Tahoma", Font.PLAIN, 14));
+			btn_Clear.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
 			btn_Clear.setBounds(490, 330, 100, 40);
 			btn_Clear.setFocusable(false);
+			btn_Clear.setBackground(Color.cyan);
 			jPannel.add(btn_Clear);
 			
 			btn_Clear.addActionListener(new ActionListener() {
