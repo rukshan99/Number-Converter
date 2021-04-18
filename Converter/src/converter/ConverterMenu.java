@@ -1,5 +1,6 @@
 package converter;
 
+import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -55,12 +56,12 @@ public class ConverterMenu extends JFrame  {
 		jpanel.setVisible(true);
 
 		title = new JLabel("Number Converter");
-		title.setFont(new Font("Times New Roman", Font.PLAIN, 28));
-		title.setBounds(180, 25, 175, 30);
+		title.setFont(new Font("Arial", Font.PLAIN, 28));
+		title.setBounds(160, 25, 250, 30);
 		jpanel.add(title);
 		
 		decimalBtn = new JButton("Decimal Converter");
-		decimalBtn.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		decimalBtn.setFont(new Font("Comic Sans MS", Font.PLAIN, 18));
 		decimalBtn.setFocusable(false);
 		decimalBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -74,11 +75,12 @@ public class ConverterMenu extends JFrame  {
 				}
 			}
 		});
-		decimalBtn.setBounds(50, 90, 200, 60);
+		decimalBtn.setBounds(150, 90, 230, 60);
+		decimalBtn.setBackground(Color.white);
 		jpanel.add(decimalBtn);
 		
 		binaryBtn = new JButton("Binary Converter");
-		binaryBtn.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		binaryBtn.setFont(new Font("Comic Sans MS", Font.PLAIN, 18));
 		binaryBtn.setFocusable(false);
 		binaryBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -92,12 +94,13 @@ public class ConverterMenu extends JFrame  {
 				}
 			}
 		});
-		binaryBtn.setBounds(280, 90, 200, 60);
+		binaryBtn.setBounds(150, 165, 230, 60);
+		binaryBtn.setBackground(Color.CYAN);
 		jpanel.add(binaryBtn);
 
 
 		octalBtn = new JButton("Octal Converter");
-		octalBtn.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		octalBtn.setFont(new Font("Comic Sans MS", Font.PLAIN, 18));
 		octalBtn.setFocusable(false);
 		octalBtn.addActionListener(new ActionListener() {
 
@@ -113,12 +116,13 @@ public class ConverterMenu extends JFrame  {
 			}
 		});
 
-		octalBtn.setBounds(50, 170, 200, 60);
+		octalBtn.setBounds(150, 240, 230, 60);
+		octalBtn.setBackground(Color.white);
 		jpanel.add(octalBtn);
 
 		
 		hexaBtn = new JButton("Hexa-Decimal Converter");
-		hexaBtn.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		hexaBtn.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
 		hexaBtn.setFocusable(false);
 		hexaBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -132,7 +136,8 @@ public class ConverterMenu extends JFrame  {
 				}
 			}
 		});
-		hexaBtn.setBounds(280, 170, 200, 60);
+		hexaBtn.setBounds(150, 315, 230, 60);
+		hexaBtn.setBackground(Color.CYAN);
 		jpanel.add(hexaBtn);
 		
 	}

@@ -72,47 +72,44 @@ private DecimalConverterService decimalConverterService;
 		
 		title = new JLabel("Decimal Converter");
 		title.setFont(new Font("Times New Roman", Font.PLAIN, 35));
+		title.setFont(new Font("Arial", Font.PLAIN, 35));
 		title.setBounds(260, 10, 460, 40);
 		jPannel.add(title);
 	
 	
 		
-		input = new JLabel("Input");
-		input.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		input.setBounds(160, 80, 60, 20);
-		jPannel.add(input);
-		
-			
-		output = new JLabel("Output");
-		output.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		output.setBounds(510, 80, 60, 20);
-		jPannel.add(output);
-		
-		input_box = new JTextField();
-		input_box.setHorizontalAlignment(SwingConstants.CENTER);
-		input_box.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		input_box.setBounds(50, 180, 280, 70);
-		
-		
-		input_box.setColumns(10);
-		jPannel.add(input_box);
-		
-		
-		
 		dropdown = new JComboBox<String>();
 		dropdown.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		dropdown.setBounds(50, 120, 250, 40);
+		dropdown.setBackground(Color.white);
 		jPannel.add(dropdown);
 		
 		dropdown.addItem("Binary");
 		dropdown.addItem("Octal");
 		dropdown.addItem("Hexa Decimal");
 		
+		input = new JLabel("Input");
+		input.setFont(new Font("Comic Sans MS", Font.PLAIN, 20));
+		input.setBounds(160, 80, 200, 20);
+		jPannel.add(input);
 
+		output = new JLabel("Output");
+		output.setFont(new Font("Comic Sans MS", Font.PLAIN, 20));
+		output.setBounds(480, 80, 200, 20);
+		jPannel.add(output);
+
+		input_box = new JTextField();
+		input_box.setHorizontalAlignment(SwingConstants.CENTER);
+		input_box.setFont(new Font("Comic Sans MS", Font.BOLD, 20));
+		input_box.setBounds(50, 180, 280, 70);
+
+		input_box.setColumns(10);
+		jPannel.add(input_box);
+		
 		output_box = new JTextField();
 		output_box.setEditable(false);
 		output_box.setBackground(Color.white);
-		output_box.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		output_box.setFont(new Font("Comic Sans MS", Font.BOLD, 20));
 		output_box.setHorizontalAlignment(SwingConstants.CENTER);
 		output_box.setBounds(400, 180,280, 70);		
 		output_box.setColumns(10);
@@ -122,13 +119,17 @@ private DecimalConverterService decimalConverterService;
 
 		Convert = new JButton("Convert");
 		Convert.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		Convert.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
+		Convert.setBackground(Color.cyan);
 		Convert.setBounds(140, 330, 100, 40);
 		Convert.setFocusable(false);
 		jPannel.add(Convert);
 
 		Clear = new JButton("Clear");
 		Clear.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		Clear.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
 		Clear.setBounds(490, 330, 100, 40);
+		Clear.setBackground(Color.cyan);
 		Clear.setFocusable(false);
 		jPannel.add(Clear);
 		

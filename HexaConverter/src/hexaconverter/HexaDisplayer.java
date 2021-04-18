@@ -56,13 +56,14 @@ public class HexaDisplayer extends JDialog{
 		jPannel.setLayout(null);
 
 		title = new JLabel("Hexa Decimal Converter");
-		title.setFont(new Font("Times New Roman", Font.PLAIN, 35));
+		title.setFont(new Font("Arial", Font.PLAIN, 35));
 		title.setBounds(210, 10, 460, 40);
 		jPannel.add(title);
 
 		dropdown = new JComboBox();
 		dropdown.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		dropdown.setBounds(60, 120, 250, 40);
+		dropdown.setBackground(Color.white);
 		jPannel.add(dropdown);
 
 		dropdown.addItem("Decimal");
@@ -70,18 +71,18 @@ public class HexaDisplayer extends JDialog{
 		dropdown.addItem("Binary");
 
 		input = new JLabel("Input");
-		input.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		input.setFont(new Font("Comic Sans MS", Font.PLAIN, 20));
 		input.setBounds(160, 80, 200, 20);
 		jPannel.add(input);
 
-		output = new JLabel("HexaDecimal");
-		output.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		output = new JLabel("Output");
+		output.setFont(new Font("Comic Sans MS", Font.PLAIN, 20));
 		output.setBounds(480, 80, 200, 20);
 		jPannel.add(output);
 
 		input_box = new JTextField();
 		input_box.setHorizontalAlignment(SwingConstants.CENTER);
-		input_box.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		input_box.setFont(new Font("Comic Sans MS", Font.BOLD, 20));
 		input_box.setBounds(50, 180, 280, 70);
 
 		input_box.setColumns(10);
@@ -90,22 +91,24 @@ public class HexaDisplayer extends JDialog{
 		output_box = new JTextField();
 		output_box.setEditable(false);
 		output_box.setBackground(Color.white);
-		output_box.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		output_box.setFont(new Font("Comic Sans MS", Font.BOLD, 20));
 		output_box.setHorizontalAlignment(SwingConstants.CENTER);
 		output_box.setBounds(400, 180,280, 70);		
 		output_box.setColumns(10);
 		jPannel.add(output_box);
 
 		btn_Convert = new JButton("Convert");
-		btn_Convert.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		btn_Convert.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
 		btn_Convert.setBounds(140, 330, 100, 40);
 		btn_Convert.setFocusable(false);
+		btn_Convert.setBackground(Color.cyan);
 		jPannel.add(btn_Convert);
 
 		btn_Clear = new JButton("Clear");
-		btn_Clear.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		btn_Clear.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
 		btn_Clear.setBounds(490, 330, 100, 40);
 		btn_Clear.setFocusable(false);
+		btn_Clear.setBackground(Color.cyan);
 		jPannel.add(btn_Clear);
 
 		btn_Clear.addActionListener(new ActionListener() {
