@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: DecimalSubscriber
+Bundle-SymbolicName: DecimalSubscriber
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: decimalsubscriber.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: DecimalSubscriber
+Import-Package: decimalpublisher,
+ org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
+Export-Package: decimalsubscriber
